@@ -1,6 +1,6 @@
 "use client";
 
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { SocialItem } from "./social-item";
 
 const items = [
@@ -13,7 +13,7 @@ const items = [
     href: "https://www.linkedin.com/in/gaurav-tiwari-a8b50a194",
   },
   {
-    icon: FaTwitter,
+    icon: FaXTwitter,
     href: "https://twitter.com/GauravTiw1998",
   },
 ];
