@@ -1,9 +1,11 @@
 import { Heading } from "./heading";
+import { ProjectsCard } from "./projects-card";
 
 export const Projects = () => {
   return (
-    <div className="h-2/3">
-      <Heading />
+    <div className="h-full">
+      <Heading label="Projects" />
+      <ProjectsCard />
     </div>
   );
 };

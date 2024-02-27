@@ -13,7 +13,7 @@ export const Hero = () => {
   return (
     <div
       className={cn(
-        "h-full flex flex-col-reverse gap-y-6 justify-center px-20 md:flex-row md:h-2/3",
+        "h-full md:h-2/3 flex flex-col-reverse justify-evenly md:justify-center px-5 md:px-10 lg:px-20 md:flex-row",
         font.className
       )}
     >
