@@ -2,6 +2,7 @@ import { IoMdStar } from "react-icons/io";
 import { Heading } from "./heading";
 import { ProjectsCard } from "./projects-card";
 import { Button } from "./ui/button";
+import { MoreProjects } from "./more-projects";
 
 export const Projects = () => {
   return (
@@ -13,6 +14,7 @@ export const Projects = () => {
         </Button>
       </div>
       <ProjectsCard />
+      <MoreProjects />
     </div>
   );
 };
