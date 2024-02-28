@@ -10,12 +10,15 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { BsGithub } from "react-icons/bs";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 interface ProjectCardItemProps {
   title: string;
   description: string;
   imageUrl: string;
+  liveUrl: string;
   githubUrl: string;
+  hasLiveUrl: boolean;
   tools: string[];
 }
 
@@ -24,17 +27,19 @@ export const ProjectCardItem = ({
   description,
   imageUrl,
   githubUrl,
+  liveUrl,
+  hasLiveUrl,
   tools,
 }: ProjectCardItemProps) => {
   return (
-    <Card className="w-[400px] h-fit bg-zinc-800/50 border-zinc-800/10 cursor-pointer hover:scale-105 transition text-white">
+    <Card className="h-fit bg-zinc-800/50 border-zinc-800/10 cursor-pointer hover:scale-105 transition text-white hover:border-white duration-300">
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardTitle className="text-sm">{title}</CardTitle>
+        <CardDescription className="text-sm">{description}</CardDescription>
       </CardHeader>
       <CardContent>
         <Image
-          width={400}
+          width={650}
           height={500}
           src={imageUrl}
           alt="project-image"
@@ -51,14 +56,24 @@ export const ProjectCardItem = ({
           </span>
         ))}
       </CardFooter>
-      <CardFooter className="flex flex-col">
-        <div className="flex justify-end w-full gap-x-2">
-          <Button variant="ghost" asChild>
-            <Link href={githubUrl} target="__blank">
-              <BsGithub className="h-6 w-6" />
+      <CardFooter
+        className={cn(
+          "flex justify-between items-center",
+          !hasLiveUrl && "justify-end"
+        )}
+      >
+        {hasLiveUrl && (
+          <Button variant="link" size="sm" asChild>
+            <Link href={liveUrl} target="__blank" replace>
+              Live
             </Link>
           </Button>
-        </div>
+        )}
+        <Button variant="ghost" size="sm" asChild>
+          <Link href={githubUrl} target="__blank">
+            <BsGithub className="h-6 w-6" />
+          </Link>
+        </Button>
       </CardFooter>
     </Card>
   );
