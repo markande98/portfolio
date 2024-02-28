@@ -9,8 +9,8 @@ export const Projects = () => {
     <div className="h-full">
       <Heading label="My Work" />
       <div className="px-10 py-10 flex justify-center md:justify-start">
-        <Button className="text-4xl py-8 px-2" variant="ghost">
-          <IoMdStar className="h-10 w-10 mr-2" /> Feature Projects
+        <Button className="text-2xl md:text-4xl py-8 px-2" variant="ghost">
+          <IoMdStar className="h-8 w-8 md:h-10 md:w-10 mr-2" /> Feature Projects
         </Button>
       </div>
       <ProjectsCard />

@@ -27,8 +27,9 @@ export const MoreProjects = () => {
   return (
     <div className="p-10 space-y-5">
       <div className="flex justify-center md:justify-start">
-        <Button className="text-4xl py-8 px-2" variant="ghost">
-          <CiCircleMore className="h-10 w-10 mr-2" /> More Projects
+        <Button className="text-2xl md:text-4xl py-8 px-2" variant="ghost">
+          <CiCircleMore className="h-8 w-8 md:h-10 md:w-10 mr-2" /> More
+          Projects
         </Button>
       </div>
       <div className="flex flex-wrap gap-4 flex-col sm:flex-row justify-center sm:justify-between items-center">

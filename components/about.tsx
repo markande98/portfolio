@@ -3,16 +3,16 @@ import { Button } from "@/components/ui/button";
 export const About = () => {
   return (
     <div className="flex flex-col w-full items-center md:items-start md:w-2/3 space-y-4 justify-center">
-      <div className="text-yellow-400 text-sm md:text-md lg:text-2xl">
+      <div className="text-yellow-400 text-xs sm:text-sm md:text-md lg:text-2xl">
         Hi Everyone
       </div>
-      <h1 className="text-sm md:text-md lg:text-4xl text-zinc-300">
+      <h1 className="text-xs sm:text-sm md:text-md lg:text-4xl text-zinc-300">
         I&apos;m Gaurav Tiwari
       </h1>
-      <h2 className="text-sm md:text-md lg:text-2xl text-muted-foreground text-white">
+      <h2 className="text-xs sm:text-sm md:text-md lg:text-2xl text-muted-foreground text-white">
         Full Stack Developer & Competetive Programmer
       </h2>
-      <p className="text-muted-foreground text-white text-sm md:text-md lg:text-lg leading-8">
+      <p className="text-muted-foreground text-white text-xs sm:text-sm md:text-md lg:text-lg leading-8">
         My name is Gaurav Tiwari with over 2 years of industry experience. I do
         competetive programming and Knight on Leetcode with 950+ problems
         solved,represented my college in{" "}
