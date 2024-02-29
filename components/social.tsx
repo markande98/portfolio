@@ -20,7 +20,7 @@ const items = [
 
 export const Social = () => {
   return (
-    <div className="flex items-center space-x-4">
+    <div className="flex items-center gap-x-6 md:gap-x-0 md:space-x-6">
       {items.map((item) => (
         <SocialItem key={item.href} icon={item.icon} href={item.href} />
       ))}

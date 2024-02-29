@@ -1,8 +1,8 @@
 import { Exo_2 } from "next/font/google";
 
+import { cn } from "@/lib/utils";
 import { About } from "./about";
 import { ProfileImage } from "./profile-image";
-import { cn } from "@/lib/utils";
 
 const font = Exo_2({
   subsets: ["latin"],
@@ -13,7 +13,7 @@ export const Hero = () => {
   return (
     <div
       className={cn(
-        "h-full md:h-2/3 flex flex-col-reverse justify-evenly md:justify-center px-5 md:px-10 lg:px-20 md:flex-row",
+        "h-full md:h-2/3 flex flex-col-reverse justify-evenly md:justify-center px-5 md:px-10 md:flex-row",
         font.className
       )}
     >

@@ -1,8 +1,7 @@
+import { BodyWrapper } from "@/components/body-wrapper";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { BodyWrapper } from "@/components/body-wrapper";
-import { cn } from "@/lib/utils";
 
 const inter = Poppins({ subsets: ["latin"], weight: ["400", "600"] });
 

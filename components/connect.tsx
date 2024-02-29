@@ -8,7 +8,7 @@ import { SocialItem } from "./social-item";
 
 export const Connect = () => {
   return (
-    <div>
+    <div id="connect">
       <Heading label="Connect" />
       <div className="p-10 flex flex-col space-y-8 md:flex-row items-center justify-between">
         <div className="flex flex-col space-y-6 w-1/2 items-center">

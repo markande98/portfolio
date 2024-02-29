@@ -1,9 +1,10 @@
 "use client";
 
 import { useScroll } from "@/hooks/use-scroll";
-import { Menu } from "./menu";
-import { Social } from "./social";
 import { cn } from "@/lib/utils";
+import { Menu } from "./menu";
+import { MobileMenu } from "./mobile-menu";
+import { Social } from "./social";
 
 export const Navigation = () => {
   const scrolled = useScroll();
@@ -20,10 +21,13 @@ export const Navigation = () => {
           <b className="text-yellow-600">T</b>iwari
         </h1>
       </div>
-      <div className="px-4 flex items-center space-x-8">
+      <div className="hidden px-4 md:flex items-center space-x-8">
         <Menu />
         <div className="w-[2px] h-5 bg-white" />
         <Social />
+      </div>
+      <div className="md:hidden block">
+        <MobileMenu />
       </div>
     </div>
   );

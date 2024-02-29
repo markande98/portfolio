@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -6,11 +7,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { BsGithub } from "react-icons/bs";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
+import { BsGithub } from "react-icons/bs";
 
 interface ProjectCardItemProps {
   title: string;

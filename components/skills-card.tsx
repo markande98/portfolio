@@ -1,4 +1,3 @@
-import { FaNode, FaNodeJs, FaReact } from "react-icons/fa6";
 import { SkillCardItem } from "./skill-card-item";
 
 const skills = [
