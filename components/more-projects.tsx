@@ -1,6 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import { CiCircleMore } from "react-icons/ci";
 import { Item } from "./item";
 
@@ -25,7 +23,7 @@ const items = [
 
 export const MoreProjects = () => {
   return (
-    <div className="p-10 space-y-5">
+    <div className="px-10 pt-10 pb-20 space-y-5">
       <div className="flex justify-center md:justify-start">
         <Button className="text-2xl md:text-4xl py-8 px-2" variant="ghost">
           <CiCircleMore className="h-8 w-8 md:h-10 md:w-10 mr-2" /> More
