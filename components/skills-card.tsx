@@ -35,11 +35,11 @@ const skills = [
     href: "/aws.png",
   },
   {
-    name: "PostgreSql",
+    name: "PostgreSQL",
     href: "/postgresql.png",
   },
   {
-    name: "MySql",
+    name: "MySQL",
     href: "/mysql.png",
   },
   {
