@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export const About = () => {
   return (
@@ -22,8 +23,13 @@ export const About = () => {
         in 2018 and 2019 regional&apos;s. I like challenge myself that&apos;s
         how you become better everyday.😎
       </p>
-      <Button className="w-32 text-black" variant="outline">
-        Download CV
+      <Button className="w-fit text-black" variant="outline" asChild>
+        <Link
+          href="https://drive.google.com/file/d/1GgV2xLL6JgkeoriusfKzPCBCoaMdXJqO/view?usp=sharing"
+          target="__blank"
+        >
+          View Cv
+        </Link>
       </Button>
     </div>
   );

@@ -11,7 +11,7 @@ export const Navigation = () => {
   return (
     <div
       className={cn(
-        "w-full p-2 text-white fixed h-[60px] flex items-center justify-between z-[100]",
+        "w-full px-6 py-2 text-white fixed h-[60px] flex items-center justify-between z-[100]",
         scrolled && " border-b-slate-400 shadow-md bg-zinc-800 backdrop-blur"
       )}
     >
