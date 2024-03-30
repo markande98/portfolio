@@ -14,8 +14,8 @@ export const About = () => {
         Full Stack Developer & Competetive Programmer
       </h2>
       <p className="text-muted-foreground text-white text-xs sm:text-sm md:text-md lg:text-lg leading-8">
-        My name is Gaurav Tiwari with over 2 years of industry experience. I do
-        competetive programming and Knight on Leetcode with 950+ problems
+        My name is Gaurav Tiwari with over 2.5 years of industry experience. I
+        do competetive programming and Knight on Leetcode with 950+ problems
         solved,represented my college in{" "}
         <strong className="font-bold bg-zinc-600 p-1 rounded-md hover:bg-zinc-500">
           ACM ICPC
@@ -25,7 +25,7 @@ export const About = () => {
       </p>
       <Button className="w-fit text-black" variant="outline" asChild>
         <Link
-          href="https://drive.google.com/file/d/1GgV2xLL6JgkeoriusfKzPCBCoaMdXJqO/view?usp=sharing"
+          href="https://drive.google.com/file/d/1ygnuLaML4c6tWb7wSPvL8UJ-NCX9_Iig/view?usp=sharing"
           target="__blank"
         >
           View Cv
